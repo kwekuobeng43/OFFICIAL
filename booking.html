@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bro Barber</title>
+    <Link rel="stylesheet" href="CSS/nice.css">
+        <script src="https://kit.fontawesome.com/c0a8c3a25b.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "u3KqrVwRS_y3xN7WW",
+      });
+   })();
+</script>
+</head>
+<body>
+    <section class="pages">
+        <nav class="nav">
+            <img src="images/11.png">
+
+            <div class="navLinks" id="navLinks">
+                <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#"><button><i class="fa-solid fa-user"></i></button></a></li>
+                <li><a href="#"><button><i class="fa-solid fa-cart-shopping"></i></button></a></li>
+
+
+            </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        
+        </nav>
+        <div class="box">
+            <h2>Booking</h2>
+
+        </div>
+    </section>
+    
+          <section class="bookingForm">
+
+           <div class="bookingCol">
+            <h1>Book a seat</h1>
+            <p>Please fill out these details to book</p><br>
+             <form action=""> 
+                 <input type="text" id="name" placeholder="Enter your name" required>
+                 <input type="email" id="email" placeholder="Enter your email" required>
+                 <input type="phone" id="phone" placeholder="Phone number" required>
+                 <input type="date" id="date" placeholder="mm/dd/yyyy" required>
+                 <input type="number" placeholder="number of people" id="number" min="1" max="10" required>
+                 <textarea placeholder="Message" id="message" required></textarea>
+                 <button type="submit" onclick="send(event)" value="submit">Submit</button>
+                 <button type="reset" >Reset</button>
+             </form>
+                  
+             </div>
+          </section>
+
+           <footer class="footer">
+                <div class="footer__card">
+                  <h2 class="footer__card-title">Our Sites</h2><br>
+                  <a href="https://www.whatsapp.com/business/"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp</a><br><br>
+                  <a href="https://www.instagram.com/official_barberr?igsh=MWg0ZzBxYnJmY2FkZA=="><i class="fab fa-instagram"></i>&nbsp;&nbsp;Instagram</a><br><br>
+                  <a href="https://www.facebook.com/share/19TzPZ45ns/"><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</a><br><br>
+                  <a href="https://youtube.com/@officialbarberrshop?si=KrCt4UuP8uDKq-LY"><i class="fab fa-youtube"></i>&nbsp;&nbsp;YouTube</a>
+                </div>
+
+                <div class="footer__card">
+                  <h2 class="footer__card-title">Meet Our Barbers</h2>
+                  <a href="barbers.html"><p class="footer__card-info">The Barbers</p></a>
+                  <a href="clients-feedback.html"><p class="footer__card-info">Clients' Feedback</p></a>
+                  <p class="footer__card-info">Feedback</p>
+                  <a href="services.html"><p class="footer__card-info">Barber's Tips</p></a>
+                </div>
+                <div class="footer__card">
+                  <h1 class="footer__card-title">Quick Links</h1>
+                  <a href="about.html"><p class="footer__card-info">About</p></a>
+                  <a href="services.html"<p class="footer__card-info">Services</p>
+                  <a href="booking.html"><p class="footer__card-info">Booking</p></a>
+                  <a href="gallery.html"><p class="footer__card-info">Gallery</p></a>
+                  <a href="contact.html"><p class="footer__card-info">Contact</p></a>
+
+                </div>
+              </footer>
+               
+              <p class="footer__card-push">&copy;2025 Official Barber Shop. All rights reserved.</p>
+            
+              
+                <script>
+            
+                    var menu = document.getElementById("navLinks");
+                    if (window.matchMedia("(min-width: 700px)").matches) {
+                      menu.style.display = "block"; // Show menu
+                  } else {
+                    menu.style.display = "none"; // Hide menu
+              }
+          
+                   function showMenu() {
+                       document.querySelector('.navLinks').style.display = 'block';
+                   }
+                   function hideMenu() {
+                       document.querySelector('.navLinks').style.display = 'none';
+                   }
+      </script>
+
+<script>
+function send(event) {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const date = document.getElementById('date').value;
+  const number = document.getElementById('number').value;
+  const message = document.getElementById('message').value;
+
+  if (name === '' || email === '' || phone === '' || date === '' || number === '' || message === '') {
+    alert('Please fill in all required fields.❌');
+    return;
+  }
+
+  const templateParams = {
+    name: name,
+    email: email,
+    phone: phone,
+    date: date,
+    number: number,
+    message: message
+  };
+
+  emailjs.send("service_ia6z30m", "template_y42guam", templateParams)
+    .then((response) => {
+      alert('Thank you for your message! Your email has been sent.');
+    });
+}
+
+            </script>
+        
+        
+        </body>
+        </html>
+            
+

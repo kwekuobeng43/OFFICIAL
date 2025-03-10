@@ -1,0 +1,1220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/tall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    }
+
+
+    .pages{
+        width: 100%;
+        min-height: 40vh;
+        background-image: url(../images/tall.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    
+        }
+    
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 6px;
+
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+nav img{
+    width: 250px;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%; 
+    height: 2px; 
+    background-color: black;
+    margin: auto;
+    display: block;
+    transition: 1s;
+
+ }
+ nav ul li a:hover::after{
+     width: 100%;
+ }
+
+ .textbox{
+     color: #0e0e87;
+     text-align: center;
+     position: absolute;
+     transform: translate(-50%, -50%);
+     left: 50%;
+     top: 60%;
+ }
+ .textbox h1{
+     font-size: 3em;
+     font-weight: bold;
+ }
+ .textbox p{
+     font-size: 1em;
+     margin-top: 15px;
+     color:rgb(85, 214, 85);
+ }
+ .box h2{
+    text-align: center;
+    position: relative;bottom: 80px;
+    font-size: 25px;
+    
+ }
+
+
+.btn{
+    background-color: orange;
+    color: black;
+    border:2px solid blue;
+    position: relative;
+    margin-top: 30px;
+    padding: 1rem 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    transition: 0.4S;
+    font-weight: 300; 
+}
+.btn:hover{
+    background-color: yellow;
+    transition: 0.5s;
+    
+
+}
+
+.fa-solid.fa-square-xmark{
+    display: none;
+
+}
+
+.fa-solid.fa-bars{
+    display: none;
+}
+/*Images in images.html*/
+.container-photos{
+
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    background-color: #ffffff;
+
+
+}
+.photos-section img{
+
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:350px;
+    height: 300px;
+    border-radius: 13px;
+    border: 2px solid black;
+    box-shadow: 4px 7px 7px 0px blue;
+    cursor: pointer;
+    transition: 400ms;
+    margin: 15px 15px;
+    
+}
+.photos-section img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+/*main section images*/
+
+.main-photos{
+
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    background-color: #ffffff;
+
+
+}
+.main-section img{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:300px;
+    height: 200px;
+    border-radius: 13px;
+    border: 2px solid black;
+    box-shadow: 4px 7px 7px 0px blue;
+    cursor: pointer;
+    transition: 400ms;
+    
+}
+.main-section img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+/*images in image.html*/
+
+/*general for About Us*/
+.general{
+    width: 100%;
+    min-height: 100vh;
+
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-sec{
+    float: left;
+    width: 55%;
+
+}
+.image-section{
+    float: right;
+    width: 40%;
+
+}
+.image-section img{
+    width: 80%;
+    height: 40%;
+    flex-wrap: wrap;
+    border-radius: 13px;
+    border: 2px solid black;
+    box-shadow: 4px 7px 7px 0px blue;
+    cursor: pointer;
+    transition: 400ms;
+    margin-top: 10px;
+
+
+}
+.image-section img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+
+}
+.content-section .tittle{
+    text-transform: uppercase;
+    font-size: 5px;
+    font-weight: 600;
+    font-family: sans-serif;
+
+
+}
+.content-section .content h3{
+    margin-top: 80%;
+    color: blueviolet;
+    font-size: 21px;
+    
+}
+.content-section .content p{
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5; 
+
+
+}
+.content-sec .content .button{
+    margin-top: 30px;
+
+}
+.content-sec .content .button a{
+    background-color: rgb(6, 7, 7);
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #f4f4f9;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+
+}
+.content-sec .content .button a:hover{
+    background-color: blue;
+    color: #ffffff;
+}
+.content-sec .social{
+    margin: 20px 20px;
+
+
+}
+.content-sec .socia i{
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+/*end of general for about us*/
+
+
+/* ---- contact page  ---- */
+
+.location{
+  width: 50%;
+  height: 400px;
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+    margin-left: 20%;
+
+}
+
+
+/*contact end*/
+
+/*bookingForm start*/
+
+.bookingForm{
+    width: 35%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10%;
+
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 5px 5px 0px blue;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.bookingForm .bookingCol{
+    flex-basis: 50%;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    margin: 4px;
+
+}
+
+.bookingCol div{
+    display: flex;
+
+}
+
+.bookingCol input, .bookingCol textarea{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    outline: none;
+   
+}
+
+.bookingCol button{
+    padding: 15px 30px;
+    background-color: #f98b8b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.bookingCol h1, p{
+    text-align: center;
+}
+
+.bookingCol button:hover{
+    color: yellow;
+    background-color: #000;
+}
+
+/*bookingForm end*/
+    
+/*footer start*/
+.footer {
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: black;
+    height: 50vh;
+    margin-top: 10rem;
+  }
+  
+  .footer__card-title {
+    font-family: var(--main-font);
+  }
+  
+  .footer__card-info {
+    font-family: var(--secondary-font);
+    line-height: 2rem;
+  }
+  .footer__card a{
+        text-decoration: none;
+        text-decoration-line: none;
+        color: black;
+  }
+  .footer__card a:hover{
+      color: white;
+  }
+  .footer__card-push{
+    background-color: rgb(211, 211, 211);
+  }
+/*footer end*/
+
+
+/*services*/
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    animation-name: slideright;
+    animation-duration: 2s;
+
+  }
+  @keyframes slideright {
+    from {transform: translateX(100%);}
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgb(223, 223, 223);
+    margin: 5px;
+    padding: 5px;
+
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position:center;
+  }
+  
+  .img-one {
+    background-image: url(../images/star.jpg);
+  }
+  .img-two {
+    background-image: url(../images/see.jpg);
+  }
+  .img-three {
+    background-image: url(../images/barber10.jpg);
+  }
+  
+  .card-content {
+    transform: translateY(200px);
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+
+  }
+  
+  .card-title {
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-bottom: 30px 0;
+    color: #000;
+  }
+  
+  .card-info {
+    font-family: var(--secondary-font);
+    text-align: center;
+    color: rgb(109, 109, 109);
+    margin: 30px 40px;
+  }
+
+  .card-btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    background: black;
+    color: rgb(223, 223, 50);
+    font-family: var(--secondary-font);
+  }
+   /*services end*/
+
+   /*card price section*/
+
+
+.multis { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;  
+  animation-name: slideright; 
+  animation-duration: 2s; 
+  
+  
+}
+
+@keyframes slideright { 
+  from {transform: translateX(100%);}
+}
+
+.multi { 
+  width: 200px; 
+  height: 300px; 
+  position: relative; 
+  box-shadow: 1px 1px 1px 1px none; 
+  margin: 15px; 
+  padding: 10px; 
+}
+
+.multi-img { 
+  margin-top: 5%;
+  width: 100%; 
+  height: 200px; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  background-size: cover; 
+  background-position:center; 
+
+}
+
+/*men*/
+.men-services .men-one { 
+  background-image: url(../images/016.jpg); 
+}
+
+.men-services .men-two { 
+  background-image: url(../images/09.jpg); 
+}
+
+.men-services .men-three { 
+  background-image: url(../images/023.jpg); 
+}
+.men-services .men-four { 
+  background-image: url(../images/haircutnew1.jpg); 
+}
+/*women*/
+.women-services .women-one { 
+  background-image: url(../images/nice.jpg); 
+}
+
+.women-services .women-two { 
+  background-image: url(../images/01.jpg); 
+}
+
+.women-services .women-three { 
+  background-image: url(../images/024.jpg); 
+}
+.women-services .women-four { 
+  background-image: url(../images/haircutwoman.jpg); 
+}
+
+/*children*/
+.children-services .children-one { 
+  background-image: url(../images/kid1.jpg); 
+}
+
+.children-services .children-two { 
+  background-image: url(../images/kid2.jpg); 
+}
+
+.children-services .children-three { 
+  background-image: url(../images/kid3.jpg); 
+}
+.children-services .children-four { 
+  background-image: url(../images/child2.jpg); 
+}
+
+/*beard services*/
+
+.beard-services .beard-one { 
+  background-image: url(../images/beard1.jpg); 
+}
+
+.beard-services .beard-two { 
+  background-image: url(../images/beard2.jpg); 
+}
+
+.beard-services .beard-three { 
+  background-image: url(../images/beard3.jpg); 
+}
+.beard-services .beard-four { 
+  background-image: url(../images/beardbro.jpg); 
+}
+.multis .beard-services{
+  margin-top: 0%;
+}
+
+.beard1-services .beard1-one { 
+  background-image: url(../images/beard4.jpg); 
+}
+
+.beard1-services .beard2-two { 
+  background-image: url(../images/barber5.jpg); 
+}
+
+.beard1-services .beard3-three { 
+  background-image: url(../images/barber6.jpg); 
+}
+.beard1-services .beard4-four { 
+  background-image: url(../images/beardnew.jpg); 
+}
+
+/*beard end*/
+
+/*hair coloring men*/
+.hair-services .hair-one { 
+  background-image: url(../images/barber7.jpg); 
+}
+
+.hair-services .hair-two { 
+  background-image: url(../images/barber8.jpg); 
+}
+
+.hair-services .hair-three { 
+  background-image: url(../images/barber9.jpg); 
+}
+.hair-services .hair-four { 
+  background-image: url(../images/colorman.jpg); 
+}
+
+/*hair coloring women*/
+.hair1-services .hair1-one { 
+  background-image: url(../images/hair1.jpg); 
+}
+
+.hair1-services .hair2-two { 
+  background-image: url(../images/hair2.jpg); 
+}
+
+.hair1-services .hair3-three { 
+  background-image: url(../images/hair3.jpg); 
+}
+.hair1-services .hair4-four { 
+  background-image: url(../images/hairnew.jpg); 
+}
+/*hair coloring children*/
+.hair1-services .hair4-one { 
+  background-image: url(../images/hair7.jpg); 
+}
+
+.hair1-services .hair5-two { 
+  background-image: url(../images/hair8.jpg); 
+}
+
+.hair1-services .hair6-three { 
+  background-image: url(../images/hair9.jpg); 
+}
+.hair1-services .hair7-four { 
+  background-image: url(../images/kidnew.jpg); 
+}
+/*hair coloring end*/
+
+.multi-content { 
+  transform: translateY(200px); 
+  text-align: center; 
+  margin: 15px; 
+}
+
+.multi-title { 
+  font-family: sans-serif; 
+  font-weight: normal; 
+  margin-bottom: 20px 0; 
+  color: #000; 
+}
+
+.multi-info { 
+  font-family: var(--secondary-font); 
+  text-align: center; 
+  color: rgb(109, 109, 109); 
+  margin: 15px 30px; 
+}
+
+.multi-btn { 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  background: orange; 
+  color: black; 
+  font-family: var(--secondary-font); 
+}
+.services h2{
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 20px;
+}
+
+   /*card price end here*/
+   
+ 
+
+   /*short brief for homepage*/
+    .oval-container{
+        margin-top: 50px;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.5; 
+
+    }
+
+    /*in the main paragraph*/
+   .oval-container p{
+    
+    text-align: center;
+    margin-top: 10px;
+    margin: 50px;
+    
+
+}
+.oval-container h2{
+text-align: center;
+    
+}
+/*main paragraph end*/
+
+
+/*Main.html Video*/
+.video{
+  text-align: center;
+}
+/*video end*/
+
+/*The barbers*/
+.general{
+  width: 100%;
+  min-height: 100vh;
+
+}
+.container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+.content-sec{
+  float: left;
+  width: 55%;
+
+}
+.image-section{
+  float: right;
+  width: 40%;
+
+}
+.image-section img{
+  width: 80%;
+  height: 40%;
+  flex-wrap: wrap;
+  border-radius: 13px;
+  border: 2px solid black;
+  box-shadow: 4px 7px 7px 0px blue;
+  cursor: pointer;
+  transition: 400ms;
+  margin-top: 10px;
+
+
+}
+.image-section img:hover{
+  filter: grayscale(1);
+  transform: scale(1.03);
+
+}
+.content-section .tittle{
+  text-transform: uppercase;
+  font-size: 5px;
+  font-weight: 600;
+  font-family: sans-serif;
+
+
+}
+.content-section .content h3{
+  margin-top: 80%;
+  color: blueviolet;
+  font-size: 21px;
+  
+}
+.content-section .content p{
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5; 
+
+
+}
+
+
+/*The barbers end*/
+
+
+/*clients feedback start*/
+.comment{
+  width:80%;
+ text-align: center;
+ margin: auto;
+ padding: 100px;
+ margin-top: 5%;
+ 
+}
+
+.comment h1{
+font-size: 36px;
+font-weight: 600;
+}
+
+.comment p{
+font-size: 14px;
+margin-top: 10px;
+color: #9e9898;
+padding: 10px;
+}
+
+.row{
+margin: 5%;
+display: flex;
+justify-content: space-between;
+
+}
+
+.commentCol{
+background-color: #fff3f3;
+border-radius: 10px;
+padding: 20px 10px;
+box-sizing: border-box;
+flex-basis: 30%;
+margin-top: 5%;
+animation-name: slideright;
+animation-duration: 2s;
+}
+
+@keyframes slideright { 
+  from {transform: translateX(100%);}
+}
+
+
+
+.leave{
+  text-align: center;
+  margin-top: 0px;
+
+  
+}
+.leave button{
+  background-color: rgb(17, 17, 12);
+  color: #fff;
+  border:1px solid blue;
+  border-radius: 1px;
+  margin: 3px;
+
+  position: relative;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.4S;
+}
+.leave button:hover{
+  background-color: #fff;
+  color: #b83333;
+
+}
+.leave textarea{
+  border-color: rgb(255, 0, 0);
+}
+
+/*images section -videos*/
+.see__videos .watch{
+  margin-top: 5%;
+}
+/*images section - videos end*/
+
+/*the title for the videos in gallery*/
+.line h2{
+  text-align: center;
+  margin-top: 5%;
+}
+/* title end here*/
+
+/*Tips sec silk storm*/
+.silk-storm{
+  margin-top: 10%;
+  text-align: center;
+}
+.products img{
+  text-align: center;
+  width: 400px;
+  height: 450px;
+}
+/*tips end*/
+/*mobile view section*/
+
+
+@media (max-width: 768px){
+
+    /*about us start*/
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+        
+    }
+    .content-sec{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 80%;
+    }
+    .image-section img{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-right: 2%;
+    }
+    
+    .content-sec .content h3{
+        padding-left: 2%;
+    }
+    .content-sec .title h1{
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    
+
+    .content-sec .content .button{
+        text-align: center;
+        
+    }
+
+.content-sec .content .button a{
+    padding: 9px 30px;
+}
+.content-sec .social{
+    text-align: center;
+}
+/*about us end here*/
+
+nav ul li{
+    display: block;
+}
+
+.navLinks{
+    display: none;
+    width: 80%;
+    margin: 0px;
+    top: 0px;
+    padding: 10px;
+    right: 0px;
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    background-color: greenyellow;
+
+
+
+}
+
+.textbox h1{
+    font-size: 1.5em;
+
+}  
+
+.textbox p{
+    font-size: 1em;
+    color: #000;
+}
+.textbox a{
+  margin-top: 50px;
+}
+
+    
+
+.content-section .tittle{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+
+
+}
+.content-section .content h3{
+    margin-top: 50%;
+    color: blueviolet;
+    font-size: 16px;
+
+
+}
+.content-section .content p{
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+.content-sec .content .button{
+    margin-top: 18px;
+
+}
+.content-sec .content .button a{
+    background-color: rgb(6, 7, 7);
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #f4f4f9;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+.content-sec .content .button a:hover{
+    background-color: blue;
+    color: #ffffff;
+}
+.content-sec .social{
+    margin: 10px 10px;
+
+
+}
+.content-sec .socia i{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0px 5px;
+}
+
+
+
+.fa-solid.fa-square-xmark{
+    display: block;
+    color:black;
+    cursor: pointer;
+}
+
+.fa-solid.fa-bars{
+    display: block;
+    color:black;
+    cursor: pointer;
+}
+
+/*services start*/
+
+/*services end*/
+
+   /*photos section*/
+.photos-section{
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    margin-left:20%;
+}
+.photos-section img{
+    width: 250px;
+    height: 200px;
+    flex-wrap: wrap;
+    border-radius: 13px;
+    border: 2px solid black;
+    box-shadow: 4px 7px 7px 0px blue;
+    cursor: pointer;
+    transition: 400ms;
+    margin-top: 20px;
+
+
+}
+.photos-section img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+
+}
+/*photos section end*/
+ 
+
+
+
+.location{
+    
+    margin-left: 60px;
+    text-align: left;
+    width: 250px;
+
+
+
+}
+
+
+.footer {
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: black;
+    height: 50vh;
+    margin-top: 10rem;
+  }
+  
+  .footer__card-title {
+    font-family: var(--main-font);
+  }
+  
+  .footer__card-info {
+    font-family: var(--secondary-font);
+    line-height: 2rem;
+  }
+
+  /*booking section*/
+  .bookingCol button{
+    padding: 15px;
+    background-color: #f98b8b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.5s;
+    text-align: center;
+    margin: 5px;
+    width: 70px;
+    
+    .bookingForm{
+        width: 70px;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10%;
+    
+        flex-wrap: wrap;
+        border-radius: 10px;
+        border: 2px solid black;
+        box-shadow: 3px 5px 5px 0px blue;
+        cursor: pointer;
+        transition: 400ms;
+    }
+    
+    .bookingForm .bookingCol{
+        padding: 15px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        margin: 4px;
+        height: 50px;
+    
+    }
+    
+    .bookingCol div{
+        display: flex;
+    
+    }
+    
+    .bookingCol input, .bookingCol textarea{
+        width: 70 px;
+        padding: 5px;
+        margin-bottom: 10px;
+        outline: none;
+       
+    }
+    /*booking end*/
+
+}
+
+
+
+
+
+
+.container-photos{
+
+  display: flex;
+  width: 40%;
+  text-align: center;
+  margin: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+
+
+}
+.photos-section img{
+
+  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 3px 5px 5px 0px blue;
+  cursor: pointer;
+  transition: 400ms;
+  margin-left:  15px;
+  
+}
+
+.image-section img{
+  margin-top: 50px;
+}
+
+.title h2{
+  text-align: center;
+}
+
+.content p{
+  margin-top: 20px;
+}
+
+.btn{
+  background-color: orange;
+  color: black;
+  border:2px solid blue;
+  position: relative;
+  margin-top: 15px;
+  padding: 1rem 1rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  transition: 0.4S;
+  font-weight: 200; 
+}
+
+.button{
+  margin-top: 50px;
+}
+
+.social a{
+  margin-top: 50px;
+}
+
+.comment .row {
+  padding-right: 90px;
+  
+}
+}

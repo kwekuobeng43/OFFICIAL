@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bro Barber</title>
+    <Link rel="stylesheet" href="CSS/nice.css">
+        <script src="https://kit.fontawesome.com/c0a8c3a25b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="pages">
+        <nav class="nav">
+            <img src="images/11.png">
+
+            <div class="navLinks" id="navLinks">
+                <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="images.html">IMAGES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#"><button><i class="fa-solid fa-user"></i></button></a></li>
+                <li><a href="#"><button><i class="fa-solid fa-cart-shopping"></i></button></a></li>
+
+
+            </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        
+        </nav>
+        <div class="box"> 
+            <h2>Our Barbers</h2>
+        </div>
+    </section>
+
+        <section class="general">
+        <div class="container">
+            <div class="content-sec">
+                <div class="title">
+                    <h2>Jospeh Obeng</h2>
+                </div>
+                <div class="content">
+                  
+                    <p>
+                     Joseph Obeng, a 26-year-old skilled barber with over 6 years of experience, is dedicated to 
+                     providing exceptional grooming experiences. With a passion for precision and attention to detail,
+                     Joseph crafts unique hairstyles that enhance each client's features. His friendly demeanor and 
+                     listening ear ensure that every customer feels at ease, leaving the shop feeling refreshed and confident.
+
+                    </p>
+                    
+                 </div>
+              </div>
+              <div class="image-section">
+                <img src="images/017.jpg">
+    
+              </div>
+    
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__card">
+            <h2 class="footer__card-title">Our Sites</h2><br>
+            <a href="https://www.whatsapp.com/business/"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp</a><br><br>
+            <a href="https://www.instagram.com/official_barberr?igsh=MWg0ZzBxYnJmY2FkZA=="><i class="fab fa-instagram"></i>&nbsp;&nbsp;Instagram</a><br><br>
+            <a href="https://www.facebook.com/share/19TzPZ45ns/"><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</a><br><br>
+            <a href="https://youtube.com/@officialbarberrshop?si=KrCt4UuP8uDKq-LY"><i class="fab fa-youtube"></i>&nbsp;&nbsp;YouTube</a>
+          </div>
+
+        
+        <div class="footer__card">
+          <h2 class="footer__card-title">Meet Our Barbers</h2>
+          <a href="barbers.html"><p class="footer__card-info">The Barbers</p></a>
+          <a href="clients-feedback.html"><p class="footer__card-info">Clients' Feedback</p></a>
+          <p class="footer__card-info">Feedback</p></a>
+          <a href="services.html"><p class="footer__card-info">Barber's Tips</p></a>
+
+        </div>
+        <div class="footer__card">
+          <h2 class="footer__card-title">Quick Links</h2>
+          <a href="about.html"><p class="footer__card-info">About</p></a>
+          <a href="services.html"><p class="footer__card-info">Services</p></a>
+          <a href="booking.html"><p class="footer__card-info">Booking</p></a>
+          <a href="images.html"><p class="footer__card-info">Images</p></a>
+          <a href="contact.html"><p class="footer__card-info">Contact</p></a>
+
+        </div>
+      </footer>
+       
+      <p class="footer__card-push">&copy;2025 Official Barber Shop. All rights reserved.</p>
+
+    
+   
+    <script>
+
+        var menu = document.getElementById("navLinks");
+        if (window.matchMedia("(min-width: 700px)").matches) {
+          menu.style.display = "block"; // Show menu
+      } else {
+        menu.style.display = "none"; // Hide menu
+  }
+
+       function showMenu() {
+           document.querySelector('.navLinks').style.display = 'block';
+       }
+       function hideMenu() {
+           document.querySelector('.navLinks').style.display = 'none';
+       }
+   </script>
+
+
+
+</body>
+</html>
